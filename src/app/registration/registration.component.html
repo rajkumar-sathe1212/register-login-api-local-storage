@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-lg-12">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-6">
+
+          <div class="card">
+
+            <form class="box" [formGroup]="formgroup" (ngSubmit)="submit(formgroup.value)">
+
+              <h1>Login</h1>
+
+              <p class="text-primary"> Please enter your login email and password!</p>
+
+              <div>
+                <label class="text-warning">Enter Email</label><br>
+                <input type="email" formControlName="email" placeholder="email">
+              </div>
+
+              <div>
+                <label class="text-warning">Enter Password</label>
+                <input type="password" formControlName="password" placeholder="Password">
+              </div>
+
+              <div>
+                <a class="forgot text-secondary" href="#" (click)="back()">Forgot password?</a>
+                <input type="submit" name="" value="Login" href="#">
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
