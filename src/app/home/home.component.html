@@ -1,12 +1,21 @@
 
-<div class="container-fluid">
-  <div class="row">
+      <app-navbar></app-navbar>
 
-    <div class="col-lg-12">
+      <div class="row" >
 
-      <h1>Home Component Works</h1>
+        <h1 class="text-center p-5" style="font-weight: 600;">Our Products <div> <hr class="hr"> </div></h1>
 
-    </div>
+        <div class="col-lg-4 text-center" *ngFor="let u of users">
 
-  </div>
-</div>
+          <div class="border p-3"><img src="{{u.image}}" height="200px" width="70%" ></div>
+
+          <h3 class="mt-4">Product name</h3>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolorum quidem ab sit asperiores ratione obcaecati voluptates? Praesentium, modi natus.</p>
+
+          <div><button class="btn btn-primary" routerLink="/about">Visit</button></div>
+          <hr>
+        </div>
+
+      </div>
+

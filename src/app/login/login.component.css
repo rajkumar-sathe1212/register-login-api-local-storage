@@ -1,8 +1,8 @@
 .form-container{ font-family: 'Overpass', sans-serif; }
 .form-container .form-horizontal{
     background: linear-gradient(to right,#202926 49%,#15201C 50%);
-    width: 350px;
-    height: 350px;
+    width: 550px;
+    height: 550px;
     padding: 75px 55px;
     margin: 0 auto;
     border-radius: 50%;
@@ -35,7 +35,7 @@
     display: inline-block;
 }
 .form-horizontal .form-control{
-    color: #838585;
+    color: bisque;
     background-color: transparent;
     font-size: 14px;
     letter-spacing: 1px;

@@ -9,6 +9,8 @@ import { RegistrationComponent } from './registration/registration.component';
 import { HomeComponent } from './home/home.component';
 import { WildCardComponent } from './wild-card/wild-card.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     RegistrationComponent,
     HomeComponent,
-    WildCardComponent
+    WildCardComponent,
+    AboutComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

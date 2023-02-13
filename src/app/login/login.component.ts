@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit{
 
   load(){
     this.formgroup = new FormGroup({
+      name:new FormControl(""),
       email:new FormControl(""),
       password:new FormControl("")
     })
@@ -32,7 +33,7 @@ export class LoginComponent implements OnInit{
     this.formArray.push(data);
 
     localStorage.setItem("users",JSON.stringify(this.formArray));
-    
+
     this.load();
 
     this.router.navigate(['registration']);

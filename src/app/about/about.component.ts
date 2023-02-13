@@ -1,17 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { ApiService } from '../api.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.css']
 })
-export class HomeComponent implements OnInit{
+export class AboutComponent implements OnInit{
 
   users:any;
 
-  constructor(private router:Router,private api:ApiService){ }
+  constructor(private api:ApiService) { }
 
   ngOnInit(): void {
     this.api.get("https://fakestoreapi.com/products").subscribe((result:any)=>{
@@ -21,4 +20,3 @@ export class HomeComponent implements OnInit{
 
 
 }
-
